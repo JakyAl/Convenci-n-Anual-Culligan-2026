@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infokit 2026</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0b132b 0%, #1e3a8a 100%); }
+        .ocean-gradient { background: linear-gradient(135deg, #0b132b 0%, #1d4ed8 50%, #06b6d4 100%); }
+        .wave-bottom { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+        .wave-bottom svg { position: relative; display: block; width: calc(100% + 1.3px); height: 50px; }
+        .wave-bottom .shape-fill { fill: #ffffff; }
+        .mint-gradient { background: linear-gradient(135deg, #6ee7b7 0%, #34d399 100%); }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .timeline-dot { position: absolute; left: -33px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background-color: #6ee7b7; border: 3px solid #1d4ed8; }
+        .timeline-item { position: relative; padding-left: 20px; border-left: 2px solid #e2e8f0; padding-bottom: 1.5rem; }
+        .timeline-item:last-child { border-left: 2px solid transparent; }
+    </style>
+</head>
+<body class="bg-[#f1f5f9] text-slate-800 antialiased">
+
+    <div class="max-w-5xl mx-auto bg-white min-h-screen shadow-2xl overflow-hidden relative">
+          
+        <header class="ocean-gradient text-white pt-16 pb-32 px-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <i class="fa-solid fa-umbrella-beach text-[16rem] absolute top-10 -left-10 transform -rotate-12"></i>
+                <i class="fa-regular fa-futbol text-[12rem] absolute top-20 right-10 transform rotate-12 text-[#6ee7b7]"></i>
+            </div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-[#6ee7b7] rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform translate-x-1/2 translate-y-1/2"></div>
+            
+            <div class="relative z-10 flex flex-col items-center text-center">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-futbol text-[#6ee7b7] text-xl animate-bounce"></i>
+                    <span class="text-[#6ee7b7] font-bold tracking-widest uppercase text-sm">El Equipo Campeón Culligan</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">INFOKIT <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6ee7b7] to-blue-300">2026</span></h1>
+                <h2 class="text-2xl md:text-3xl font-light mb-8">Convención Anual</h2>
+                
+                <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium">
+                    <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
+                        <i class="fa-solid fa-location-dot text-[#6ee7b7]"></i> Cancún, México
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
+                        <i class="fa-solid fa-calendar-days text-[#6ee7b7]"></i> 12 al 15 de Mayo, 2026
+                    </div>
+                </div>
+            </div>
+
+            <div class="wave-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.81,26.79,150.8,38.31,226.7,46.5,258.46,49.92,290.1,53.25,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </header>
+
+        <main class="px-6 md:px-12 py-10 space-y-16 -mt-8 relative z-20">
+
+            <section class="bg-white rounded-2xl p-8 card-shadow border-t-4 border-[#1d4ed8] flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-[#0b132b] mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-handshake-angle text-[#1d4ed8]"></i> Bienvenidos al Juego
+                    </h3>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Prepárate para salir a la cancha. En nuestra Convención Anual 2026, nos reunimos no solo para revisar nuestra realidad de negocio y estrategias, sino para consolidarnos como un equipo de alto rendimiento.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Durante estos días, analizaremos nuestras prioridades financieras, nos adaptaremos a entornos complejos y, lo más importante, fortaleceremos nuestra alineación estratégica para asegurar la victoria este 2026. ¡Que ruede el balón!
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="w-32 h-32 rounded-full bg-orange-50 flex items-center justify-center border-4 border-[#6ee7b7] relative">
+                        <i class="fa-solid fa-trophy text-5xl text-[#1d4ed8] absolute z-10"></i>
+                        <i class="fa-solid fa-water text-6xl text-[#6ee7b7]/40 absolute -bottom-2"></i>
+                        <div class="absolute -bottom-2 -right-2 bg-[#6ee7b7] text-[#0b132b] text-xs font-bold px-2 py-1 rounded shadow z-20">#TeamCulligan</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-[#1d4ed8] text-white flex items-center justify-center text-xl shadow-lg">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-[#0b132b]">Sede y Alojamiento</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-orange-50 border border-orange-100 p-6 rounded-2xl hover:shadow-md transition-shadow relative overflow-hidden">
+                        <i class="fa-solid fa-umbrella-beach absolute -bottom-4 -right-4 text-6xl text-orange-200/50"></i>
+                        <div class="text-[#1d4ed8] mb-2 relative z-10"><i class="fa-solid fa-map-location-dot text-2xl"></i></div>
+                        <h4 class="font-bold text-lg text-[#0b132b] mb-1 relative z-10">Hotel AVA Resort</h4>
+                        <p class="text-slate-500 text-sm font-semibold mb-3 relative z-10">Cancún (All Inclusive)</p>
+                        <p class="text-slate-600 text-sm relative z-10">Disfruta de instalaciones de primer nivel. El hotel incluye consumo en restaurantes y bares (aplican excepciones en especialidades y lugares de ocio con reserva).</p>
+                    </div>
+                    <div class="bg-cyan-50 border border-cyan-100 p-6 rounded-2xl hover:shadow-md transition-shadow relative overflow-hidden">
+                        <i class="fa-solid fa-water absolute -top-4 -right-2 text-6xl text-cyan-200/50"></i>
+                        <div class="text-[#1d4ed8] mb-2 relative z-10"><i class="fa-solid fa-bell-concierge text-2xl"></i></div>
+                        <h4 class="font-bold text-lg text-[#0b132b] mb-1 relative z-10">Check-in & Eventos</h4>
+                        <ul class="text-slate-600 text-sm space-y-2 mt-3 relative z-10">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#6ee7b7] mt-1"></i> <strong>Check-in:</strong> Bar Lobby</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#6ee7b7] mt-1"></i> <strong>Salón Principal:</strong> Salón AVA 15 y 16</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-[#0b132b] text-[#6ee7b7] flex items-center justify-center text-xl shadow-lg">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-[#0b132b]">Plan de Juego (Agenda)</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 relative overflow-hidden group hover:shadow-md transition-all">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-[#6ee7b7]"></div>
+                        <h4 class="font-bold text-xl text-[#0b132b] mb-1">Día 1</h4>
+                        <p class="text-[#1d4ed8] font-semibold text-sm mb-6">12 de Mayo</p>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">7:00pm - 9:00pm</div>
+                            <div class="font-bold text-slate-700">Cena de Bienvenida</div>
+                            <div class="text-xs text-slate-500"><i class="fa-solid fa-location-arrow text-[#1d4ed8] mr-1"></i>Salón AVA 15 y 16</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 relative overflow-hidden group hover:shadow-md transition-all">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-[#1d4ed8]"></div>
+                        <h4 class="font-bold text-xl text-[#0b132b] mb-1">Día 2</h4>
+                        <p class="text-[#1d4ed8] font-semibold text-sm mb-6">13 de Mayo</p>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">9:00am - 9:10am</div>
+                            <div class="font-bold text-slate-700">Bienvenidos</div>
+                            <div class="text-xs text-slate-500">Salón AVA 15 y 16</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">9:11am - 9:50am</div>
+                            <div class="font-bold text-slate-700 text-sm">Realidad de Negocio y Prioridades Financieras México</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">10:11am - 10:40am</div>
+                            <div class="font-bold text-slate-700 text-sm">Kiosks Realidad de Negocio</div>
+                        </div>
+                        <div class="timeline-item pb-4">
+                            <div class="timeline-dot" style="border-color: transparent; background-color: #cbd5e1; width: 12px; height: 12px; left: -31px;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">10:41am - 10:50am</div>
+                            <div class="text-sm italic text-slate-500">Break 10 minutos</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">10:50am - 12:40pm</div>
+                            <div class="font-bold text-slate-700 text-sm">Bloques de Realidad de Negocio</div>
+                            <div class="text-xs text-slate-500 mt-1">CDM / GBFC, MSS, Culligan Bus. Sys.</div>
+                        </div>
+                        <div class="timeline-item pb-4">
+                            <div class="timeline-dot" style="border-color: transparent; background-color: #cbd5e1; width: 12px; height: 12px; left: -31px;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">12:40pm - 2:00pm</div>
+                            <div class="font-bold text-[#1d4ed8] text-sm"><i class="fa-solid fa-utensils mr-1"></i> Comida Grupal</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">2:01pm - 4:00pm</div>
+                            <div class="font-bold text-slate-700 text-sm">Bloques de Realidad de Negocio</div>
+                            <div class="text-xs text-slate-500 mt-1">Finanzas, Estrat. Comercial, RRHH</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #6ee7b7; background-color: #1d4ed8;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">4:01pm - 6:00pm</div>
+                            <div class="font-bold text-slate-800 text-sm bg-[#6ee7b7]/20 px-2 py-1 rounded inline-block mt-1">Team Building (Boliche AVA)</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: transparent; background-color: #cbd5e1; width: 12px; height: 12px; left: -31px;"></div>
+                            <div class="text-sm italic text-slate-500">Cena Libre</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 relative overflow-hidden group hover:shadow-md transition-all">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-[#0b132b]"></div>
+                        <h4 class="font-bold text-xl text-[#0b132b] mb-1">Día 3</h4>
+                        <p class="text-[#1d4ed8] font-semibold text-sm mb-6">14 de Mayo</p>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">9:00am - 9:10am</div>
+                            <div class="font-bold text-slate-700 text-sm">Recap Día Anterior</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">9:11am - 9:40am</div>
+                            <div class="font-bold text-slate-700 text-sm">Estrategia 2026-SDPs & Q&A</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">9:41am - 10:40am</div>
+                            <div class="font-bold text-slate-700 text-sm">Panel con líderes</div>
+                            <div class="text-xs text-slate-500 italic mt-1">¿Cómo hemos trabajado en ambientes complejos e inciertos?</div>
+                        </div>
+                        <div class="timeline-item pb-4">
+                            <div class="timeline-dot" style="border-color: transparent; background-color: #cbd5e1; width: 12px; height: 12px; left: -31px;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">10:41am - 11:00am</div>
+                            <div class="text-sm italic text-slate-500">Break 20 minutos</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">11:00am - 1:00pm</div>
+                            <div class="font-bold text-slate-700 text-sm">Sesiones Especiales</div>
+                            <div class="text-xs text-slate-500 mt-1">Liderazgo (Beatriz Burquez), IT y Legal Realidad de Negocio</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">1:10pm - 2:40pm</div>
+                            <div class="font-bold text-slate-700 text-sm">Aterrizando SPDS & Reconocimientos</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">2:40pm - 2:55pm</div>
+                            <div class="font-bold text-red-500 text-sm">Cierre Convención</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="border-color: #1d4ed8; background-color: #0b132b;"></div>
+                            <div class="text-xs text-slate-400 font-bold mb-1">7:00pm - En adelante</div>
+                            <div class="font-bold text-slate-800 text-sm bg-blue-100 px-2 py-1 rounded inline-block mt-1">Cena de Cierre Convención (Terraza)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-12">
+                <div class="bg-[#101729] rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-gray-800 relative overflow-hidden">
+                  <div class="absolute right-0 top-0 opacity-10 pointer-events-none flex gap-8">
+                      <i class="fa-solid fa-shirt text-9xl transform translate-x-1/4 -translate-y-1/4 text-white"></i>
+                      <i class="fa-solid fa-umbrella-beach text-9xl transform translate-y-1/4 text-white"></i>
+                  </div>
+
+                  <div class="flex items-center gap-4 mb-10 relative z-10">
+                    <div class="bg-[#6ef0b9] p-3.5 rounded-full shadow-[0_0_20px_rgba(110,240,185,0.3)]">
+                      <i class="fa-solid fa-shirt text-xl text-[#101729]"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Código de Vestimenta</h2>
+                  </div>
+
+                  <p class="text-gray-400 mb-8 text-lg relative z-10">Revisa nuestras sugerencias para empacar y estar listo para cada ocasión.</p>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+                    
+                    <div class="bg-[#1e293b] rounded-3xl p-8 border border-gray-700/50 hover:border-gray-600 transition-colors">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-champagne-glasses text-xl text-[#6ef0b9]"></i>
+                        <h3 class="text-xl font-bold text-white">Cena de Bienvenida</h3>
+                      </div>
+                      <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        Zapatos cómodos, ropa fresca y semiformal. Ideal para romper el hielo.
+                      </p>
+                      <div class="inline-block bg-[#6ef0b9] text-[#101729] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+                        CÓCTEL TROPICAL / ELEGANTE GUAYABERA
+                      </div>
+                    </div>
+
+                    <div class="bg-[#1e293b] rounded-3xl p-8 border border-gray-700/50 hover:border-gray-600 transition-colors">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-briefcase text-xl text-[#3b82f6]"></i>
+                        <h3 class="text-xl font-bold text-white">Sesión de trabajo 1er día</h3>
+                      </div>
+                      <div class="space-y-3 mb-6">
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                          <strong class="text-white">Hombres:</strong> Calzado cómodo y cerrado, o tenis casuales de vestir limpios. Ropa fresca y semiformal.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                          <strong class="text-white">Mujeres:</strong> Ropa fresca, semi-formal, zapatos cómodos.
+                        </p>
+                      </div>
+                      <div class="inline-block bg-[#3b82f6] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                        BUSINESS CASUAL DE PLAYA
+                      </div>
+                    </div>
+
+                    <div class="bg-[#1e293b] rounded-3xl p-8 border border-gray-700/50 hover:border-gray-600 transition-colors">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-ticket text-xl text-[#f59e0b]"></i>
+                        <h3 class="text-xl font-bold text-white">Sesión de trabajo 2do día</h3>
+                      </div>
+                      <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        <strong class="text-white">Hombres/Mujeres:</strong> Pantalón de mezclilla o shorts, tenis cómodos y limpios, gorra y ¡trae tu playera Culligan!
+                      </p>
+                      <div class="inline-block bg-[#f59e0b] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                        DÍA DE ESTADIO ⚽
+                      </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-[#1d4ed8] to-[#2563eb] rounded-3xl p-8 border border-blue-500 shadow-lg relative overflow-hidden">
+                      <div class="absolute top-0 right-0 p-4 opacity-20">
+                        <i class="fa-solid fa-camera text-8xl text-white"></i>
+                      </div>
+                      <div class="relative z-10">
+                        <div class="flex items-center gap-3 mb-4">
+                          <div class="bg-white/20 p-2 rounded-full">
+                            <i class="fa-solid fa-temperature-half text-white"></i>
+                          </div>
+                          <h3 class="text-xl font-bold text-white">Cena de cierre</h3>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                          <p class="text-blue-100 text-sm leading-relaxed">
+                            <strong class="text-white">Hombres:</strong> Ropa fresca, relajada y colorida. Camisas estampadas, bermudas de vestir, pantalones de lino sueltos. Zapatos tipo mocasines, mules o tenis cómodos casuales y limpios.
+                          </p>
+                          <p class="text-blue-100 text-sm leading-relaxed">
+                            <strong class="text-white">Mujeres:</strong> Ropa fresca, relajada y colorida. Vestidos, pantalones o conjuntos frescos. Se recomienda alpargatas, plataformas, sandalias planas semi-formales o tenis limpios.
+                          </p>
+                        </div>
+                        <div class="inline-block bg-white text-[#1d4ed8] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                          BEACH CLUB FESTIVO ¡A ponernos guapos!
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="mt-8 bg-[#172135] border border-gray-700 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-center gap-4 justify-between relative z-10">
+                    <div class="flex items-center gap-3">
+                      <div class="bg-[#6ef0b9] rounded-full p-2">
+                        <i class="fa-solid fa-circle-exclamation text-[#101729]"></i>
+                      </div>
+                      <h4 class="text-white font-bold text-lg">¡No olvides empacar!</h4>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-end gap-2">
+                      <span class="bg-[#2a374a] text-gray-200 text-sm px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-gray-600">
+                        <i class="fa-solid fa-droplet text-blue-400"></i> Termo
+                      </span>
+                      <span class="bg-[#2a374a] text-gray-200 text-sm px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-gray-600">
+                        Traje de baño
+                      </span>
+                      <span class="bg-[#2a374a] text-gray-200 text-sm px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-gray-600">
+                        Tenis deportivos
+                      </span>
+                      <span class="bg-[#2a374a] text-gray-200 text-sm px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-gray-600">
+                        <i class="fa-solid fa-temperature-half text-yellow-400"></i> FPS 25-50+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-gray-100 card-shadow">
+                  <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold text-[#0b132b] mb-3">Tu Moodboard de Estilo</h2>
+                    <p class="text-slate-500">
+                      ¿No estás seguro de qué llevar? Sube aquí algunas fotos de referencia o inspiración para armar tus outfits para cada evento.
+                    </p>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="flex flex-col gap-3">
+                      <div class="text-center">
+                        <h4 class="font-bold text-gray-800">Cena de Bienvenida</h4>
+                        <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Cóctel Tropical</span>
+                      </div>
+                      <div id="slot-bienvenida" class="relative h-64 rounded-2xl overflow-hidden transition-all duration-300 flex items-center justify-center group border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 hover:border-blue-400 cursor-pointer" onclick="document.getElementById('input-bienvenida').click()">
+                        <input type="file" accept="image/*" id="input-bienvenida" class="hidden" onchange="subirImagen(event, 'bienvenida')">
+                        
+                        <div id="empty-bienvenida" class="text-center px-4 flex flex-col items-center">
+                          <div class="bg-white p-3 rounded-full shadow-sm mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-image text-gray-400 text-xl group-hover:text-blue-500"></i>
+                          </div>
+                          <p class="text-sm font-medium text-gray-500">Haz clic para subir foto</p>
+                        </div>
+                        
+                        <img id="img-bienvenida" class="hidden w-full h-full object-cover">
+                        
+                        <div id="overlay-bienvenida" class="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <button onclick="borrarImagen(event, 'bienvenida')" class="bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-transform hover:scale-110 shadow-lg">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                      <div class="text-center">
+                        <h4 class="font-bold text-gray-800">1er Día</h4>
+                        <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Business Playa</span>
+                      </div>
+                      <div id="slot-dia1" class="relative h-64 rounded-2xl overflow-hidden transition-all duration-300 flex items-center justify-center group border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 hover:border-blue-400 cursor-pointer" onclick="document.getElementById('input-dia1').click()">
+                        <input type="file" accept="image/*" id="input-dia1" class="hidden" onchange="subirImagen(event, 'dia1')">
+                        
+                        <div id="empty-dia1" class="text-center px-4 flex flex-col items-center">
+                          <div class="bg-white p-3 rounded-full shadow-sm mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-image text-gray-400 text-xl group-hover:text-blue-500"></i>
+                          </div>
+                          <p class="text-sm font-medium text-gray-500">Haz clic para subir foto</p>
+                        </div>
+                        
+                        <img id="img-dia1" class="hidden w-full h-full object-cover">
+                        
+                        <div id="overlay-dia1" class="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <button onclick="borrarImagen(event, 'dia1')" class="bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-transform hover:scale-110 shadow-lg">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                      <div class="text-center">
+                        <h4 class="font-bold text-gray-800">2do Día</h4>
+                        <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Día de Estadio</span>
+                      </div>
+                      <div id="slot-dia2" class="relative h-64 rounded-2xl overflow-hidden transition-all duration-300 flex items-center justify-center group border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 hover:border-blue-400 cursor-pointer" onclick="document.getElementById('input-dia2').click()">
+                        <input type="file" accept="image/*" id="input-dia2" class="hidden" onchange="subirImagen(event, 'dia2')">
+                        
+                        <div id="empty-dia2" class="text-center px-4 flex flex-col items-center">
+                          <div class="bg-white p-3 rounded-full shadow-sm mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-image text-gray-400 text-xl group-hover:text-blue-500"></i>
+                          </div>
+                          <p class="text-sm font-medium text-gray-500">Haz clic para subir foto</p>
+                        </div>
+                        
+                        <img id="img-dia2" class="hidden w-full h-full object-cover">
+                        
+                        <div id="overlay-dia2" class="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <button onclick="borrarImagen(event, 'dia2')" class="bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-transform hover:scale-110 shadow-lg">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                      <div class="text-center">
+                        <h4 class="font-bold text-gray-800">Cena de Cierre</h4>
+                        <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Beach Club</span>
+                      </div>
+                      <div id="slot-cierre" class="relative h-64 rounded-2xl overflow-hidden transition-all duration-300 flex items-center justify-center group border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 hover:border-blue-400 cursor-pointer" onclick="document.getElementById('input-cierre').click()">
+                        <input type="file" accept="image/*" id="input-cierre" class="hidden" onchange="subirImagen(event, 'cierre')">
+                        
+                        <div id="empty-cierre" class="text-center px-4 flex flex-col items-center">
+                          <div class="bg-white p-3 rounded-full shadow-sm mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-image text-gray-400 text-xl group-hover:text-blue-500"></i>
+                          </div>
+                          <p class="text-sm font-medium text-gray-500">Haz clic para subir foto</p>
+                        </div>
+                        
+                        <img id="img-cierre" class="hidden w-full h-full object-cover">
+                        
+                        <div id="overlay-cierre" class="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <button onclick="borrarImagen(event, 'cierre')" class="bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-transform hover:scale-110 shadow-lg">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            </section>
+
+            <section class="pb-10">
+                <h3 class="text-2xl font-extrabold text-[#0b132b] mb-6 border-b-2 border-slate-200 pb-2">Información del Destino y Tips</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-b from-blue-50 to-white p-6 rounded-2xl border border-blue-100 shadow-sm flex items-start gap-5">
+                        <div class="text-amber-500 text-5xl">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-[#0b132b] mb-2">Clima Previsto</h4>
+                            <p class="text-slate-600 text-sm mb-4">Se espera un clima cálido y parcialmente soleado. Es indispensable llevar protección solar.</p>
+                            <div class="flex items-center gap-4">
+                                <div class="text-center">
+                                    <span class="block text-2xl font-bold text-red-500">33°C</span>
+                                    <span class="text-xs text-slate-500 font-bold uppercase">Max</span>
+                                </div>
+                                <div class="w-px h-10 bg-slate-300"></div>
+                                <div class="text-center">
+                                    <span class="block text-2xl font-bold text-blue-500">24°C</span>
+                                    <span class="text-xs text-slate-500 font-bold uppercase">Min</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">
+                                <i class="fa-solid fa-shield-sun mr-1"></i> FPS 25-50 ¡Muy Alto! Recomendado
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-lg text-[#0b132b] mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-plane-departure text-[#1d4ed8]"></i> Logística y Disposiciones
+                        </h4>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-van-shuttle text-[#6ee7b7] mt-1"></i>
+                                <span><strong>Transporte:</strong> El traslado Aeropuerto - Hotel está programado. Consulta tu itinerario en el correo electrónico.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-receipt text-[#6ee7b7] mt-1"></i>
+                                <span><strong>Reembolsos:</strong> Si ningún horario se ajusta, reserva tu transporte y solicita reembolso mediante viáticos (solo en horarios de Convención).</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                                <span><strong>Importante:</strong> Cambios en vuelos o pérdida de los mismos, así como consumos fuera del programa, correrán a cargo del invitado.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-[#0b132b] text-center py-6 text-slate-400 text-sm relative z-20">
+            <p>Nos vemos en la cancha.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function subirImagen(event, slot) {
+            const archivo = event.target.files[0];
+            if (archivo) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    // Ocultar estado vacío
+                    document.getElementById('empty-' + slot).classList.add('hidden');
+                    
+                    // Mostrar imagen
+                    const img = document.getElementById('img-' + slot);
+                    img.src = e.target.result;
+                    img.classList.remove('hidden');
+                    
+                    // Mostrar botón de borrar
+                    document.getElementById('overlay-' + slot).classList.remove('hidden');
+                    
+                    // Cambiar estilos del contenedor
+                    const contenedor = document.getElementById('slot-' + slot);
+                    contenedor.classList.remove('border-2', 'border-dashed', 'border-gray-300', 'bg-gray-50');
+                    contenedor.classList.add('bg-gray-100', 'shadow-md');
+                };
+                reader.readAsDataURL(archivo);
+            }
+        }
+
+        function borrarImagen(event, slot) {
+            // Evita que al dar clic en el botón de borrar, se abra la ventana de subir archivo
+            event.stopPropagation(); 
+            
+            // Limpiar input
+            document.getElementById('input-' + slot).value = '';
+            
+            // Ocultar imagen
+            const img = document.getElementById('img-' + slot);
+            img.src = '';
+            img.classList.add('hidden');
+            
+            // Ocultar botón de borrar
+            document.getElementById('overlay-' + slot).classList.add('hidden');
+            
+            // Mostrar estado vacío
+            document.getElementById('empty-' + slot).classList.remove('hidden');
+            
+            // Restaurar estilos del contenedor
+            const contenedor = document.getElementById('slot-' + slot);
+            contenedor.classList.add('border-2', 'border-dashed', 'border-gray-300', 'bg-gray-50');
+            contenedor.classList.remove('bg-gray-100', 'shadow-md');
+        }
+    </script>
+</body>
+</html>
